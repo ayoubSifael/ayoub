@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ayubu Mpolo - Nutritionist</title>
+  <style>
+    body {
+      background-color: rgb(215, 226, 228);
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #4caf50;
+      padding: 10px;
+      text-align: center;
+      font-size: 24px;
+      color: white;
+    }
+
+    nav {
+      margin: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #4caf50;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: red;
+    }
+
+    p {
+      color: blue;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    footer {
+      background-color: #4caf50;
+      padding: 10px;
+      text-align: center;
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-container img {
+      width: 300px;
+      height: auto;
+      margin: 10px;
+    }
+
+    .food-images img {
+      width: 100px;
+      height: auto;
+      margin: 5px;
+    }
+  </style>
+</head>
+<script>
+  window.onscroll = function () {
+    myFunction();
+  };
+
+  var header = document.querySelector("header");
+  var sticky = header.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+</script>
+
+<body>
+  <h1>my first web page</h1>
+  <p>my first paragraph</p>
+  <header>Welcome to Ayubu Mpolo's Nutrition Page</header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+
+  <section id="home">
+    <h1>Nutrition Information</h1>
+    <div class="image-container">
+      <img src="images/healthy_food.jpg" alt="Healthy Food" />
+      <img src="images/nutritionist.jpg" alt="Nutritionist" />
+    </div>
+    <table>
+      <tr>
+        <th>Kind of Food</th>
+        <th>How It Works</th>
+        <th>Examples</th>
+        <th>Images</th>
+      </tr>
+      <tr>
+        <td>Carbohydrate</td>
+        <td>Produces more energy in the body</td>
+        <td>Cassava, wheat, rice</td>
+        <td class="food-images">
+          <img src="images/cassava.jpg" alt="Cassava" />
+          <img src="images/wheat.jpg" alt="Wheat" />
+          <img src="images/rice.jpg" alt="Rice" />
+        </td>
+      </tr>
+      <tr>
+        <td>Protein</td>
+        <td>Builds body tissues</td>
+        <td>Meat, eggs, milk</td>
+        <td class="food-images">
+          <img src="images/meat.jpg" alt="Meat" />
+          <img src="images/eggs.jpg" alt="Eggs" />
+          <img src="images/milk.jpg" alt="Milk" />
+        </td>
+      </tr>
+      <tr>
+        <td>Fat</td>
+        <td>Stores energy in the body</td>
+        <td>Oil, butter</td>
+        <td class="food-images">
+          <img src="images/oil.jpg" alt="Oil" />
+          <img src="images/butter.jpg" alt="Butter" />
+        </td>
+      </tr>
+      <tr>
+        <td>Vitamin</td>
+        <td>Helps to fight against diseases</td>
+        <td>Orange, carrot</td>
+        <td class="food-images">
+          <img src="images/orange.jpg" alt="Orange" />
+          <img src="images/carrot.jpg" alt="Carrot" />
+        </td>
+      </tr>
+      <tr>
+        <td>Mineral</td>
+        <td>Helps to build body tissues</td>
+        <td>Iron, calcium</td>
+        <td class="food-images">
+          <img src="images/iron.jpg" alt="Iron" />
+          <img src="images/calcium.jpg" alt="Calcium" />
+        </td>
+      </tr>
+    </table>
+    <p>
+      It is important to eat a balanced diet to make the body strong and
+      healthy. The body needs all the nutrients to function properly.
+    </p>
+    <p>
+      As the nutritionist says, "Eat a balanced diet to stay healthy". A
+      nutritionist is a person who studies food and its effects on the body.
+    </p>
+    <p>
+      <span style="color: green">Ayubu Mpolo, a nutritionist, tries to help people eat a balanced
+        diet.</span>
+    </p>
+    <p>
+      A balanced diet is a diet that contains all the nutrients in the right
+      amount. It is important because it helps to:
+    </p>
+    <ul>
+      <li>Build the body and make it strong</li>
+      <li>Fight against diseases</li>
+      <li>Produce energy in the body</li>
+      <li>Store energy in the body</li>
+      <li>Make the body healthy</li>
+      <li>Make the body function properly</li>
+      <li>Make the body grow</li>
+    </ul>
+    <p>
+      A balanced diet is essential for building strength, fighting diseases, and maintaining overall health.
+    </p>
+    <h2>The Importance of Hydration</h2>
+    <div class="image-container">
+      <img src="images/hydration.jpg" alt="Hydration" />
+    </div>
+    <p>
+      Staying hydrated is crucial for maintaining overall health. Water is
+      essential for various bodily functions, including:
+    </p>
+    <ul>
+      <li>Regulating body temperature</li>
+      <li>Maintaining electrolyte balance</li>
+      <li>Supporting digestion and nutrient absorption</li>
+      <li>Removing waste products from the body</li>
+    </ul>
+    <h2>The Role of Fiber</h2>
+    <div class="image-container">
+      <img src="images/fiber_foods.jpg" alt="Fiber Foods" />
+    </div>
+    <p>Fiber is an important component of a healthy diet. It helps to:</p>
+    <ul>
+      <li>Promote healthy digestion</li>
+      <li>Prevent constipation</li>
+      <li>Maintain healthy blood sugar levels</li>
+      <li>Lower cholesterol levels</li>
+      <li>Support weight management</li>
+    </ul>
+    <p>Good sources of fiber include:</p>
+    <ul>
+      <li>Fruits: Apples, bananas, oranges, berries</li>
+      <li>Vegetables: Carrots, broccoli, spinach, peas</li>
+      <li>Whole grains: Oats, brown rice, whole wheat bread</li>
+      <li>Legumes: Beans, lentils, chickpeas</li>
+      <li>Nuts and seeds: Almonds, chia seeds, flaxseeds</li>
+    </ul>
+    <h2>Malnutrition Diseases and Their Effects</h2>
+    <table>
+      <tr>
+        <th>Disease</th>
+        <th>Cause</th>
+        <th>Symptoms</th>
+        <th>Prevention</th>
+      </tr>
+      <tr>
+        <td>Kwashiorkor</td>
+        <td>Severe protein deficiency</td>
+        <td>Swelling, enlarged liver, skin conditions</td>
+        <td>
+          Ensure adequate protein intake from sources like meat, eggs, and
+          legumes.
+        </td>
+      </tr>
+      <tr>
+        <td>Marasmus</td>
+        <td>Severe calorie deficiency</td>
+        <td>Severe weight loss, muscle wasting, fatigue</td>
+        <td>
+          Consume sufficient calories from a balanced diet including
+          carbohydrates, proteins, and fats.
+        </td>
+      </tr>
+      <tr>
+        <td>Rickets</td>
+        <td>Vitamin D deficiency</td>
+        <td>Weak or soft bones, stunted growth, skeletal deformities</td>
+        <td>
+          Get adequate sunlight exposure and consume vitamin D-rich foods like
+          fish and fortified dairy products.
+        </td>
+      </tr>
+      <tr>
+        <td>Scurvy</td>
+        <td>Vitamin C deficiency</td>
+        <td>Bleeding gums, weakness, bruising</td>
+        <td>
+          Include vitamin C-rich foods like citrus fruits, tomatoes, and bell
+          peppers in your diet.
+        </td>
+      </tr>
+      <tr>
+        <td>Anemia</td>
+        <td>Iron deficiency</td>
+        <td>Fatigue, weakness, pale skin</td>
+        <td>
+          Consume iron-rich foods like red meat, beans, and spinach, and
+          consider iron supplements if necessary.
+        </td>
+      </tr>
+    </table>
+    <p>
+      It is important to maintain a balanced diet to prevent these diseases
+      and ensure overall health and well-being.
+    </p>
+    <h2>How to Cook Good Food with Better Nutrition</h2>
+    <div class="image-container">
+      <img src="images/cooking.jpg" alt="Cooking" />
+    </div>
+    <p>
+      Cooking nutritious meals is essential for maintaining a healthy
+      lifestyle. Here are some tips on how to cook good food with better
+      nutrition:
+    </p>
+    <ul>
+      <li>
+        <strong>Use Fresh Ingredients:</strong> Fresh fruits, vegetables, and
+        lean meats are more nutritious than processed foods.
+      </li>
+      <li>
+        <strong>Minimize Use of Salt and Sugar:</strong> Excessive salt and
+        sugar can lead to health issues. Use herbs and spices for flavor
+        instead.
+      </li>
+      <li>
+        <strong>Choose Healthy Cooking Methods:</strong> Opt for grilling,
+        steaming, baking, or sautéing instead of frying.
+      </li>
+      <li>
+        <strong>Include a Variety of Foods:</strong> Ensure your meals include
+        a balance of carbohydrates, proteins, fats, vitamins, and minerals.
+      </li>
+      <li>
+        <strong>Control Portion Sizes:</strong> Eating the right amount of
+        food helps maintain a healthy weight and prevents overeating.
+      </li>
+      <li>
+        <strong>Stay Hydrated:</strong> Drink plenty of water throughout the
+        day and include hydrating foods like fruits and vegetables in your
+        diet.
+      </li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h1>About Ayubu Mpolo</h1>
+    <div class="image-container">
+      <img src="images/ayubu.jpg" alt="Ayubu Mpolo" />
+    </div>
+    <p>
+      Ayubu Mpolo is a certified nutritionist with over 10 years of experience
+      in helping people achieve a balanced diet and a healthy lifestyle.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h1>Contact</h1>
+    <p>Email: ayubu@nutritionist.com</p>
+    <p>Phone: +255 773 661 172</p>
+    <p>Location: Dar es Salaam, TZ</p>
+  </section>
+
+  <section id="faq">
+    <h1>Frequently Asked Questions</h1>
+    <h3>What is a balanced diet?</h3>
+    <p>It includes carbohydrates, proteins, fats, vitamins, and minerals in the right proportions.</p>
+    <h3>How much water should I drink daily?</h3>
+    <p>
+      It is generally recommended to drink at least 8 glasses (about 2 liters)
+      of water a day. However, individual needs may vary based on factors like
+      age, gender, activity level, and climate.
+    </p>
+    <h3>What are the benefits of eating fiber-rich foods?</h3>
+    <p>
+      Fiber-rich foods help promote healthy digestion, prevent constipation,
+      maintain healthy blood sugar levels, lower cholesterol levels, and
+      support weight management.
+    </p>
+    <h3>How can I ensure I get enough vitamins and minerals?</h3>
+    <p>
+      To ensure you get enough vitamins and minerals, eat a variety of fruits,
+      vegetables, whole grains, lean proteins, and dairy products. Consider
+      taking a multivitamin supplement if needed, but consult with a
+      healthcare provider first.
+    </p>
+  </section>
+
+</body>
+
+<footer>
+  <p>&copy; 2025 Ayubu Mpolo - Nutritionist</p>
+</footer>
+</html>
